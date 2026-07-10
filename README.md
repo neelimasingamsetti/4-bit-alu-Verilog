@@ -2,11 +2,9 @@
 
 ## Project Overview
 
-This project implements a **4-bit Arithmetic Logic Unit (ALU)** using **Verilog HDL**. The ALU performs arithmetic, logical, and shift operations based on a 3-bit select signal (`s[2:0]`). The design was developed, simulated, and verified using **Xilinx Vivado 2019.1**.
+This project implements a 4-bit Arithmetic Logic Unit (ALU) using Verilog HDL. The ALU performs arithmetic, logical, and shift operations based on a 3-bit select signal (`S[2:0]`). The design was developed, simulated, and verified using Xilinx Vivado 2019.1.
 
-## Features
-
-The ALU supports the following operations:
+## Operations Supported
 
 | Select Signal | Operation |
 |--------------|-----------|
@@ -26,42 +24,25 @@ The ALU supports the following operations:
 - **S[2:0]** : 3-bit select signal
 - **Y[4:0]** : 5-bit output result
 
-## Design Methodology
+## Development Environment
 
-The ALU is implemented using a Verilog **always block** and **case statement**. Based on the select signal, the required operation is performed and the result is assigned to the output.
-
-## Tools Used
-
-- Verilog HDL
-- Xilinx Vivado 2019.1
-- Behavioral Simulation
-- RTL Analysis
-- RTL Schematic Viewer
+- **Tool:** Xilinx Vivado 2019.1
+- **Hardware Description Language:** Verilog HDL
 
 ## Verification
 
-A dedicated Verilog testbench was created to verify all ALU operations. Different input combinations were applied and the output was validated through simulation waveforms.
+The ALU functionality was verified using a dedicated Verilog testbench. Simulation results were analyzed through waveform generation, and the RTL schematic was examined to verify the hardware implementation.
 
 ## Repository Contents
 
 - **alu_4.v** – Verilog design code
 - **alu_4tb.v** – Testbench code
-- **alu_4_waveform.png** – Simulation waveform
-- **alu_4_schematic.png** – RTL schematic generated in Vivado
+- **alu_4 waveform.png** – Simulation waveform
+- **alu_4 schematic.png** – RTL schematic
 
 ## Results
 
-The ALU was successfully simulated in Vivado. The generated waveforms confirm the correct functionality of all arithmetic, logical, and shift operations. RTL schematic analysis also verified the design structure.
-
-## Learning Outcomes
-
-- Verilog HDL Programming
-- Combinational Logic Design
-- Case Statement Implementation
-- Testbench Development
-- Functional Verification
-- RTL Analysis
-- Vivado Design Flow
+The simulation waveform confirms the correct functionality of all arithmetic, logical, and shift operations. The RTL schematic generated in Vivado represents the hardware structure of the ALU.
 
 ## Author
 
