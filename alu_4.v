@@ -1,7 +1,7 @@
 module alu_4(a,b,s,y);
   input [3:0] a,b;
   input [2:0] s;
-  output reg [4:0] y;
+  output reg [3:0] y;
   always@(*)begin
     case(s)
       3'b000: y=a+b;
@@ -16,7 +16,7 @@ module alu_4(a,b,s,y);
       3'b110: y=a<<1;
       3'b111: y=a>>1;
       
-      default:y=0;
+      default:y=4'b0000;
       
     endcase
   end
