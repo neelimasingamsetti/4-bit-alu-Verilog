@@ -1,51 +1,74 @@
-# 4-bit ALU using Verilog HDL
+# ⚡ 4-bit ALU using Verilog HDL
 
-## Project Overview
+<p align="center">
+  <a href="https://readme-typing-svg.demolab.com">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=2EBE5D&center=true&vCenter=true&width=520&height=50&lines=4-bit+Arithmetic+Logic+Unit;Verilog+HDL+Implementation;RTL+Synthesis+%26+Simulation" alt="Typing SVG" />
+  </a>
+</p>
 
-This project implements a 4-bit Arithmetic Logic Unit (ALU) using Verilog HDL. The ALU performs arithmetic, logical, and shift operations based on a 3-bit select signal (`S[2:0]`). The design was developed, simulated, and verified using Xilinx Vivado 2019.1.
+<p align="center">
+  <img src="https://img.shields.io/badge/Language-Verilog_HDL-orange.svg?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Tool-Xilinx_Vivado-blue.svg?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Status-Verified-success.svg?style=for-the-badge" />
+</p>
 
-## Operations Supported
+---
 
-| Select Signal | Operation |
-|--------------|-----------|
-| 000 | Addition (A + B) |
-| 001 | Subtraction (A - B) |
-| 010 | Bitwise XOR (A ^ B) |
-| 011 | Bitwise NOT (~A) |
-| 100 | Bitwise AND (A & B) |
-| 101 | Bitwise OR (A \| B) |
-| 110 | Left Shift (A << 1) |
-| 111 | Right Shift (A >> 1) |
+## 📌 Project Overview
 
-## Inputs and Outputs
+This project implements a **4-bit Arithmetic Logic Unit (ALU)** using Verilog HDL. The ALU performs comprehensive arithmetic, logical, and shift operations based on a 3-bit select signal (`S[2:0]`). The design was developed, simulated, and verified using **Xilinx Vivado**.
 
-- **A[3:0]** : 4-bit input operand
-- **B[3:0]** : 4-bit input operand
-- **S[2:0]** : 3-bit select signal
-- **Y[4:0]** : 5-bit output result
+---
 
-## Development Environment
+## ⚙️ Operations Supported
 
-- **Tool:** Xilinx Vivado 2019.1
-- **Hardware Description Language:** Verilog HDL
+| Select Signal (`S[2:0]`) | Operation | Description |
+| :---: | :--- | :--- |
+| **000** | Addition | $A + B$ |
+| **001** | Subtraction | $A - B$ |
+| **010** | Bitwise XOR | $A \oplus B$ |
+| **011** | Bitwise NOT | $\sim A$ |
+| **100** | Bitwise AND | $A \& B$ |
+| **101** | Bitwise OR | $A \mid B$ |
+| **110** | Left Shift | $A \ll 1$ |
+| **111** | Right Shift | $A \gg 1$ |
 
-## Verification
+---
 
-The ALU functionality was verified using a dedicated Verilog testbench. Simulation results were analyzed through waveform generation, and the RTL schematic was examined to verify the hardware implementation.
+## 🔌 Inputs and Outputs
 
-## Repository Contents
+* **`A[3:0]`** : 4-bit input operand A
+* **`B[3:0]`** : 4-bit input operand B
+* **`S[2:0]`** : 3-bit select signal for operation choice
+* **`Y[4:0]`** : 5-bit output result (to accommodate carry/overflow)
 
-- **alu_4.v** – Verilog design code
-- **alu_4tb.v** – Testbench code
-- **alu_4 waveform.png** – Simulation waveform
-- **alu_4 schematic.png** – RTL schematic
+---
 
-## Results
+## 🛠️ Development Environment
 
-The simulation waveform confirms the correct functionality of all arithmetic, logical, and shift operations. The RTL schematic generated in Vivado represents the hardware structure of the ALU.
+* **Hardware Description Language**: Verilog HDL
+* **EDA Tool**: Xilinx Vivado
 
-## Author
+---
 
-**Singamsetti Neelima**  
-B.Tech – Electronics Engineering (VLSI Design & Technology)  
-SRK Institute of Technology
+## 📈 Simulation & Verification
+
+The ALU functionality was rigorously verified using a dedicated Verilog testbench. 
+* **Waveform Analysis**: Simulation results confirm correct functional behavior across all operations.
+* **RTL Schematic**: Examined in Vivado to validate synthesized hardware structures.
+
+---
+
+## 📂 Repository Contents
+
+* **`alu_4.v`** – Verilog design source code
+* **`alu_4tb.v`** – Verilog testbench verification code
+* **`alu_4 waveform.png`** – Simulation waveform snapshot
+* **`alu_4 schematic.png`** – RTL synthesized schematic snapshot
+
+---
+
+<p align="center">
+  <b>Developed by Singamsetti Neelima</b><br>
+  <i>B.Tech – Electronics Engineering (VLSI Design & Technology) | SRK Institute of Technology</i>
+</p>
